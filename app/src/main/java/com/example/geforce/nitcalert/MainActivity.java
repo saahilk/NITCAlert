@@ -18,4 +18,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, AddEmergency.class);
         startActivity(intent);
     }
+
+    public void call_emergency(View view) {
+        // Do something in response to button
+        Intent intent = new Intent(MainActivity.this, Call_emergency.class);
+        startActivity(intent);
+    }
 }
