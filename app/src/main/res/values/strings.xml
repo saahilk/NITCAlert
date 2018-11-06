@@ -1,3 +1,33 @@
 <resources>
     <string name="app_name">NITCAlert</string>
+    <string name="ambulance_button">Ambulance</string>
+    <string name="security_button">Security Main Office</string>
+    <string name="LH_button">LH Security</string>
+    <string name="medical_button">Medical Officer</string>
+    <string name="sac_button">SAC</string>
+    <string name="hostel_button">Hostel Office</string>
+    <string name="description">Description</string>
+    <string name="contact">Contact</string>
+    <string name="people">People involved</string>
+    <string name="add">Add</string>
+    <string name="call">Call</string>
+    <string name="lat">Latitude</string>
+    <string name="lon">Longitude</string>
+
+    <string-array name="authorities">
+        <item>Chief Warden</item>
+        <item>Health Centre</item>
+        <item>Security Head</item>
+        <item>SAC</item>
+    </string-array>
+
+    <string-array name="contacts">
+        <item>Ambulance</item>
+        <item>Hostel Office</item>
+        <item>LH Security</item>
+        <item>Medical Officer</item>
+        <item>SAC</item>
+        <item>Security Main Office</item>
+    </string-array>
+
 </resources>

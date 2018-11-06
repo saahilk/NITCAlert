@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/edit_contact" android:icon="@drawable/ic_create_black_24dp" app:showAsAction="always"
+        android:title="Edit Contact"/>
+    <item
+        android:id="@+id/add" android:icon="@drawable/ic_add_white_24dp" app:showAsAction="always"
+        android:title="@string/add"/>
+    <item
+        android:id="@+id/call" android:icon="@drawable/ic_call_black_24dp" app:showAsAction="always"
+        android:title="@string/call"/>
+</menu>

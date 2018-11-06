@@ -1,4 +1,4 @@
-package com.example.geforce.nitcalert;
+package com.example.saahil.nitcalert;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

@@ -5,10 +5,117 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AddEmergency">
-    <TextView
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Add emergency"
-        android:textColor="#000000"
-        />
+        android:layout_height="match_parent">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="16dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <TextView
+                android:id="@+id/contact_form_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="16dp"
+                android:text="Report Emergency"
+                android:textColor="#ce3232"
+                android:textSize="40sp"
+                android:typeface="serif" />
+
+
+
+            <EditText
+                android:id="@+id/contact"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:hint="Contact of Reporter"
+                android:inputType="number" />
+
+
+
+            <EditText
+                android:id="@+id/nofpeople"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:hint="Number of people involved"
+                android:inputType="number" />
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="16dp"
+                android:text="Description"
+                android:textColor="#ce3232"
+                android:textSize="20sp"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/description_title"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:breakStrategy="balanced"
+                android:fitsSystemWindows="true"
+                android:gravity="top"
+                android:hint="Maximum 50 words"
+                android:inputType="textMultiLine"
+                android:padding="5dp"
+                android:singleLine="false" />
+
+            <TextView
+                android:id="@+id/category__title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="16dp"
+                android:text="Report To :"
+                android:textColor="#ce3232"
+                android:textSize="20sp"
+                android:typeface="serif" />
+
+
+            <Spinner
+                android:id="@+id/category_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/authorities" />
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Share location"
+                android:onClick="showMyLocation"
+                />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorPrimaryDark"
+                android:elevation="4dp"
+                android:paddingLeft="70dp"
+                android:paddingRight="70dp"
+                android:text="Submit"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+    </ScrollView>
+
 </android.support.constraint.ConstraintLayout>

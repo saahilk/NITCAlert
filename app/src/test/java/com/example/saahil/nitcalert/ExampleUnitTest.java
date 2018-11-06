@@ -1,4 +1,4 @@
-package com.example.geforce.nitcalert;
+package com.example.saahil.nitcalert;
 
 import org.junit.Test;
 
